@@ -15,7 +15,7 @@ export function reducer(state = initialState, action) {
     case CREATE_NEW:
       let completeInput = createNewSudoku()
       let input = generate36Cells(completeInput)
-      return {...state, completeInput, input, highLight:JSON.parse(JSON.stringify(input)) }
+      return {...state, completeInput, input, highLight:JSON.parse(JSON.stringify(input)),showingAnswer: false }
     case SHOW_ANSWER: 
       if(state.showingAnswer) return state
       return {...state, input: state.completeInput, showingAnswer: true}
