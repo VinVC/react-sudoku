@@ -1,0 +1,9 @@
+.row:nth-child(3n) {
+  border-bottom: 3px solid black;
+}
+
+.grid {
+  width: 450px;
+  overflow: 'hidden';
+  margin: 20px auto;
+}
